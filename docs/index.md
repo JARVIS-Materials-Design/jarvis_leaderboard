@@ -1,6 +1,6 @@
 # Welcome to JARVIS-Leaderboard
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+For full documentation visit [JARVIS](https://jarvis.nist.gov/).
 
 ## Commands
 
