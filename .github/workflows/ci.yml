@@ -18,7 +18,7 @@ jobs:
         run: |
           pip install mkdocs-material
           mkdir docs site
-          mkdocs build
+          mkdocs build --site-dir public
 
           mkdocs gh-deploy --force
 
