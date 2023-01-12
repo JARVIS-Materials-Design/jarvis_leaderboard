@@ -17,7 +17,7 @@ jobs:
       - name: Install requirements
         run: |
           pip install mkdocs-material
-          mkdir docs docs_site
+          mkdir docs site
           mkdocs build
           mkdocs gh-deploy --force
 
