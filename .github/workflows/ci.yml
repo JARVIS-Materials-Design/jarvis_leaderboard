@@ -1,25 +1,25 @@
-name: ci
-on:
-  push:
-    branches:
-      - master
-      - main
-permissions:
-  contents: write
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: 3.8
-      - name: Install requirements
-        run: |
-          pip install mkdocs-material
-          # mkdir docs site
-          mkdocs build --site-dir public
+# name: ci
+# on:
+#   push:
+#     branches:
+#       - master
+#       - main
+# permissions:
+#   contents: write
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v3
+#       - uses: actions/setup-python@v4
+#         with:
+#           python-version: 3.8
+#       - name: Install requirements
+#         run: |
+#           pip install mkdocs-material
+#           # mkdir docs site
+#           mkdocs build --site-dir public
 
-          mkdocs gh-deploy --force
+#           mkdocs gh-deploy --force
 
 
